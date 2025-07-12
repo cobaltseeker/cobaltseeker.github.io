@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  build-deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -48,4 +48,9 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+        #uses: actions/deploy-pages@v4
+
