@@ -19,6 +19,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #252627;
+  background-image: url("/backgroundspidr.jpeg");
+  background-size: auto;
 
 }
 
