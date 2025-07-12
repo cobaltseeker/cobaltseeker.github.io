@@ -2,7 +2,7 @@
   "name": "spidrapp",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://cobaltseeker.github.io/spidrApp",
+  "homepage": "https://cobaltseeker.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
